@@ -1,0 +1,21 @@
+{
+  "name": "DApp-example",
+  "homepage": "https://github.com/noeleon930/DApp-example",
+  "authors": [
+    "NoelBao <noeleon930@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "web3": "^0.16.0",
+    "jquery": "^3.1.1"
+  }
+}
