@@ -30,18 +30,18 @@ $(function () {
     // 當按下登入按鍵時
     whoamiButton.on('click', function () {
         // 先取得 etherBalance
-        eth.getBalance(whoami.val(), function (err, ethBalance) {
+        eth.getBalance(whoami.val(), function (err, _ethBalance) {
             if (!err) {
                 // 再取得 bank balance
                 // { from: account } 為 tx object
                 bank.checkBankBalance({
                     from: whoami.val()
-                }, function (err, bankBalance) {
+                }, function (err, _bankBalance) {
                     if (!err) {
                         var theAccount = {
                             address: whoami.val(),
-                            ethBalance: ethBalance,
-                            bankBalance: bankBalance
+                            ethBalance: _ethBalance,
+                            bankBalance: _bankBalance
                         };
                         // 更新活動紀錄
                         log(theAccount);
